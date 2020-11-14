@@ -1,6 +1,12 @@
 {
     "name": "yiisoft/yii2-app-basic",
     "description": "Yii 2 Basic Project Template",
+    "authors": [
+        {
+            "name": "Ararat Israelyan",
+            "email": "araratisraelyan@yandex.ru"
+        }
+    ],
     "keywords": ["yii2", "framework", "basic", "project template"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
