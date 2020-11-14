@@ -1,0 +1,11 @@
+{
+    "name": "hackintosh/yadrovskay-a",
+    "description": "Kursovaya",
+    "authors": [
+        {
+            "name": "Ararat Israelyan",
+            "email": "araratisraelyan@yandex.ru"
+        }
+    ],
+    "require": {}
+}
