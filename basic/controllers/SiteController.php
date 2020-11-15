@@ -4,11 +4,16 @@ namespace app\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
+
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Laptops;
+use app\models\Computers;
+use app\models\Services;
 
 class SiteController extends Controller
 {
@@ -124,5 +129,38 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+    // Функционал сайта
+    public function actionLaptops()
+    {
+        $dataProvider = new ActiveDataProvider([
+        'query' => Laptops::find(),
+        'pagination' => [
+            'pageSize' => 10,
+            ],
+        ]);
+        return $this->render('laptops', ['model'=> $model, 'dataProvider'=>$dataProvider]);
+    }
+
+    public function actionComputers()
+    {
+        $dataProvider = new ActiveDataProvider([
+        'query' => Computers::find(),
+        'pagination' => [
+            'pageSize' => 10,
+            ],
+        ]);
+        return $this->render('computers', ['model'=> $model, 'dataProvider'=>$dataProvider]);
+    }
+
+    public function actionServices()
+    {
+        $dataProvider = new ActiveDataProvider([
+        'query' => Services::find(),
+        'pagination' => [
+            'pageSize' => 10,
+            ],
+        ]);
+        return $this->render('services', ['model'=> $model, 'dataProvider'=>$dataProvider]);
     }
 }

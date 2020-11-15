@@ -55,6 +55,7 @@ AppAsset::register($this);
             )
         ],
     ]);
+
     NavBar::end();
     ?>
 
