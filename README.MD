@@ -1,15 +1,8 @@
 # Курсовая работа
-
-
-Выполнил студент **Исраелян Арарат** группа **ВИС42**
-
-IDE - **ATOM**
 ***
-
-
-
-
-
-*Пожалуйста, не ругайте ;)*
+## changelog:
+### 0.01 (2020-11-15)
+- basic setup
+- upgrade to bootstrap4
 
 <araratisraelyan@yandex.ru>
